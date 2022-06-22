@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to open a link in new tab using HTML</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-center">
+        <h2>How to open a link in new tab using HTML.</h2>
+        <p>Before you get into reading the technical content of this blog, one must ask why you need to open a link in a new tab.
+        The reason I asked this question to myself and started looking for answer was if the link is taking me to a new website I would prefer to open in a new tab. If it is on the same website then there is no need to open in new tab. In addition, if the user starts browsing/clicking on the new opened website then it would be difficult to return to the staring website.
+        Now let us get into the technical side of the blog.
+        To open a link in a new tab, we will need to look at some of the other attributes of the anchor element's other attributes. The Target Attribute
+        This attribute tells the browser how to open the link.
+        To open a link in a new tab, just set the target attribute to _blank:
+
+        a class="link" href="https://twitter.com/ " target="_blank">Twitter</a>
+        Now when someone clicks on the link, it will open up in a new tab, or possibly a new window depending on the person's browser settings. 
+        There is a secutiry issue with target=”_blank” and to avoid this issue you can use rel=”noreferrer noopener”. Here is an example:
+        a class="link" href="https://twitter.com/ " target="_blank" rel="noopener noreferrer" >Twitter a
+
+        The rel attribute sets the relationship between your page and the linked URL. Setting it to noopener noreferrer is to prevent a type of phishing known as tabnabbing.
+    </p>
+
+    <a href="/blogs.html">return to blogs.</a>
+    </div>
+    
+</body>
+</html>
